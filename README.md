@@ -8,7 +8,7 @@
 <p><strong>Built With:</strong></p>
 
 <ul>
-  <li>Vanilla Javascript</li>
+  <li>Vanilla JS</li>
 </ul>
 
 <hr>
