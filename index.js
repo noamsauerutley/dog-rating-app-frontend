@@ -4,7 +4,7 @@ const span = document.getElementsByClassName("close")[0];
 
 // initial fetch
 let allDogs = async () => {
-    let response = await fetch("http://localhost:3000/dogs")
+    let response = await fetch("https://we-rate-dogs-api.herokuapp.com//dogs")
     let fetchedDogs = await response.json()
    return fetchedDogs
 }
@@ -61,7 +61,7 @@ let addEventListenerToDogImg = (dog, dogImg) => {
     })
 }
 let newLike = async (dog) => {
-    let response = await fetch('http://localhost:3000/likes', {
+    let response = await fetch('https://we-rate-dogs-api.herokuapp.com//likes', {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
@@ -223,7 +223,7 @@ let newComment = (dog, modalContent) => {
         } 
         else {
             let newRating = (parseInt(currentRating) + parseInt(ratingInput) / (dog.ratings.length + 1))
-            fetch(`http://localhost:3000/ratings`, {
+            fetch(`https://we-rate-dogs-api.herokuapp.com//ratings`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -246,7 +246,7 @@ let createNewComment = async (dog, modalContent, authorInput, contentInput) => {
     let commentAuthor = authorInput.value
     let commentContent = contentInput.value
 
-    let response = await fetch(`http://localhost:3000/comments`, {
+    let response = await fetch(`https://we-rate-dogs-api.herokuapp.com//comments`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
@@ -269,7 +269,7 @@ let createNewComment = async (dog, modalContent, authorInput, contentInput) => {
     // delete function
     let deleteDog = async (dog) => {
         let dogId = dog.id
-        let response = await fetch(`http://localhost:3000/dogs/${dogId}`, {
+        let response = await fetch(`https://we-rate-dogs-api.herokuapp.com//dogs/${dogId}`, {
             method: "DELETE"
         }) 
         console.log("Deleted!")
