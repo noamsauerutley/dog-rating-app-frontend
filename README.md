@@ -7,7 +7,7 @@
 
 <p><strong>Built With:</strong></p>
 <hr></hr>
-<h1>Check it out on Now </h1>
+<h1><a href="https://dog-rating-app-frontend.now.sh/">Check it out on Now </a></h1>
 <hr></hr>
 
 <ul>
