@@ -6,6 +6,9 @@
 </blockquote>
 
 <p><strong>Built With:</strong></p>
+<hr></hr>
+<h1>Check it out on Now </h1>
+<hr></hr>
 
 <ul>
   <li>Vanilla JS</li>
